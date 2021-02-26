@@ -1,5 +1,12 @@
 const level = require('level');
 
 (function main() {
-    console.log("This is admission app");
+    connectToDatabase('admssion-db');
 }());
+
+function connectToDatabase(dbName) {
+    const options = { 
+        valueEncoding: 'json'
+    };
+    return level(dbName, options);
+}
