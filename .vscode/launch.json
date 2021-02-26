@@ -11,7 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\admission.js"
+            "program": "${workspaceFolder}\\admission.js",
+             "args": ["sched-interview", "abc", "11/2021"]
         }
     ]
 }
